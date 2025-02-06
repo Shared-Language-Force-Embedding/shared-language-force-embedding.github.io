@@ -1,0 +1,106 @@
+---
+layout: page
+title: Data Collection
+permalink: /data-collection/
+---
+
+<h2>Phrase-To-Force Trials</h2>
+
+<!-- Dropdown for Modifiers -->
+<label for="searchModifier">Filter by Modifier:</label>
+<select id="searchModifier">
+    <option value="">All</option>
+    <option value="(None)">None</option>
+    {% for modifier in site.data.unique_phrase_parts.unique_modifiers %}
+        {% if modifier != "" %}
+            <option value="{{ modifier }}">{{ modifier }}</option>
+        {% endif %}
+    {% endfor %}
+</select>
+
+<!-- Dropdown for Directions -->
+<label for="searchDirection">Filter by Direction:</label>
+<select id="searchDirection">
+    <option value="">All</option>
+    {% for direction in site.data.unique_phrase_parts.unique_directions %}
+        {% if direction != "" %}
+            <option value="{{ direction }}">{{ direction }}</option>
+        {% endif %}
+    {% endfor %}
+</select>
+
+<!-- Data Table -->
+<table id="dataTable" class="display">
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Trial #</th>
+            <th>Modifier</th>
+            <th>Direction</th>
+            <th>Trial Card</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in site.data.phrase2force_corpus %}
+        <tr>
+            <td>{{ row.user_id }}</td>
+            <td>{{ row.trial_number }}</td>
+            <td>{{ row.adverb | default: "(None)" }}</td>
+            <td>{{ row.direction }}</td>
+            <td><a href="#section-{{ row.user_id }}-{{ row.trial_number }}" class="scroll-link">View</a></td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- Load jQuery and DataTables -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+<script>
+$(document).ready(function () {
+    var table = $('#dataTable').DataTable();
+
+    // Modifier Dropdown Filtering
+    $('#searchModifier').on('change', function () {
+        var value = this.value;
+        if (value === "(none)") {
+            table.column(2).search("^$", true, false).draw(); // Regex to match empty values
+        } else {
+            table.column(2).search(value).draw();
+        }
+    });
+
+    // Direction Dropdown Filtering
+    $('#searchDirection').on('change', function () {
+        var value = this.value;
+        if (value) {
+            table.column(3).search('^' + value + '$', true, false).draw(); // Exact match using regex
+        } else {
+            table.column(3).search('').draw(); // Show all when reset
+        }
+    });
+
+    // Smooth Scrolling for Links
+    $(".scroll-link").click(function(e) {
+        e.preventDefault();
+        var target = $(this).attr("href");
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 500);
+    });
+});
+</script>
+
+<!-- Placeholder for Additional Sections -->
+<h2>Phrase-To-Force Trial Cards</h2>
+{% for row in site.data.phrase2force_corpus %}
+    <div id="section-{{ row.user_id }}-{{ row.trial_number }}" class="data-section">
+        <h3>User {{ row.user_id }}, Trial {{ row.trial_number }}</h3>
+        <p>Modifier: {{ row.adverb | default: "(None)" }}</p>
+        <p>Direction: {{ row.direction }}</p>
+        <p>Additional content about this data collection entry...</p>
+        <a href="/data-collection">Back to top</a>
+    </div>
+{% endfor %}

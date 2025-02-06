@@ -1,0 +1,34 @@
+unique_modifiers:
+  - ""
+  - slightly
+  - greatly
+  - smoothly
+  - sharply
+  - slowly
+  - quickly
+  - lightly
+  - significantly
+  - softly
+  - harshly
+  - gradually
+  - immediately
+
+unique_directions:
+  - backward
+  - backward-down
+  - backward-left
+  - backward-right
+  - backward-up
+  - down
+  - down-forward
+  - down-left
+  - down-right
+  - forward
+  - forward-left
+  - forward-right
+  - forward-up
+  - left
+  - left-up
+  - right
+  - right-up
+  - up

@@ -1,4 +1,4 @@
 <figure>
-    <img src="/assets/images/framework.jpg" alt="" width="100%">
-    <figcaption style="text-align: center;"><br/>Caption</figcaption>
+    <img src="/assets/images/framework.png" alt="" width="100%">
+    <figcaption style="text-align: center;"><br/>Architecture diagram of the cross-modality dual autoencoder that represents phrases as a concatenation of three 50×1 <a href="https://nlp.stanford.edu/projects/glove/">GloVe</a> word embeddings. The phrase embedding input is then passed into the phrase autoencoder, which encodes it into the shared latent space. There the 16×1 embedding can take 2 paths: either be decoded back into a phrase or be translated into a force profile by using the force profile decoder. Force profile inputs are first preprocessed to extract meaningful features for the force profile autoencoder to digest. They are then encoded into the shared latent space. Like phrase inputs, they can either be decoded back into a force profile or be translated into a phrase by using the phrase decoder.</figcaption>
 </figure>
