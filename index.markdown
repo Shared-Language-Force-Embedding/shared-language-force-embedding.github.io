@@ -23,14 +23,30 @@ A method for cross-modality embedding of force profile and words is presented fo
 
 ## Video Presentation
 
-<h2 class="section-title"><a href="/framework/">Framework</a></h2>
+Insert video here
+
+<h2 class="section-title"><a href="/framework/">Framework 🔗</a></h2>
+
+Our framework consisted of a dual autoencoder model that was trained to encode inputs from both modalities into a shared latent space and decode them back to construct instances of either modality.
 
 {% include framework.html %}
 
-<h2 class="section-title"><a href="/therapy-sessions/">Therapy Sessions</a></h2>
+<h2 class="section-title"><a href="/therapy-sessions/">Therapy Sessions 🔗</a></h2>
 
-<h2 class="section-title"><a href="/data-collection/">Data Collection</a></h2>
+We conducted an observational study of a physical therapist demonstrating various therapeutic techniques on a patient with neurological injuries at the Spaulding Rehabilitation Center, Cambridge, MA. The therapist's use of both verbal and physical gestures to guide patients motivated us to develop a framework that could learn the relationship between the 2 modalities.
 
-<h2 class="section-title"><a href="/results/">Results</a></h2>
+<h2 class="section-title"><a href="/data-collection/">Data Collection 🔗</a></h2>
+
+To train and evaluate the shared language-force embedding framework, we collected data from 10 participants interacting with a robot arm. Each participant underwent 2 procedures, Phrase-To-Force and Force-To-Phrase, each examining translation from one modality to the other.
+
+Insert data download
+
+<h2 class="section-title"><a href="/results/">Results 🔗</a></h2>
+
+We evaluated 2 variations of our framework against 3 other baseline models. Our experiments were designed to assess the performance of our framework on language-force translation and generalization to unseen examples. It also tested the impact of the framework leveraging different phrase representations.
+
+Insert classical results, modifier generalization results, and direction generalization results.
 
 ## Code
+
+Refer to the [Shared Language-Force Embedding repository](https://github.com/Shared-Language-Force-Embedding/shared-language-force-embedding) for the codebase of our framework and baseline models.

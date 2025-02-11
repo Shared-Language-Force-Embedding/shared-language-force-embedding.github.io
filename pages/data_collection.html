@@ -4,11 +4,18 @@ title: Data Collection
 permalink: /data-collection/
 ---
 
+<!-- Load jQuery and DataTables -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
 <h2>Phrase-To-Force Trials</h2>
 
+<p>Users were provided with the phrases below. In response, they dragged the end of a robot arm in the motion that they thought best corresponded with the provided phrase.</p>
+
 <!-- Dropdown for Modifiers -->
-<label for="searchModifier">Filter by Modifier:</label>
-<select id="searchModifier">
+<label for="searchModifier_phrase2force">Filter by Modifier:</label>
+<select id="searchModifier_phrase2force">
     <option value="">All</option>
     <option value="(None)">None</option>
     {% for modifier in site.data.unique_phrase_parts.unique_modifiers %}
@@ -19,8 +26,8 @@ permalink: /data-collection/
 </select>
 
 <!-- Dropdown for Directions -->
-<label for="searchDirection">Filter by Direction:</label>
-<select id="searchDirection">
+<label for="searchDirection_phrase2force">Filter by Direction:</label>
+<select id="searchDirection_phrase2force">
     <option value="">All</option>
     {% for direction in site.data.unique_phrase_parts.unique_directions %}
         {% if direction != "" %}
@@ -30,11 +37,12 @@ permalink: /data-collection/
 </select>
 
 <!-- Data Table -->
-<table id="dataTable" class="display">
+<table id="dataTable_phrase2force" class="display">
     <thead>
         <tr>
             <th>User ID</th>
             <th>Trial #</th>
+            <th>Phrase Text</th>
             <th>Modifier</th>
             <th>Direction</th>
             <th>Trial Card</th>
@@ -45,62 +53,166 @@ permalink: /data-collection/
         <tr>
             <td>{{ row.user_id }}</td>
             <td>{{ row.trial_number }}</td>
+            <td>{{ row.phrase_text }}</td>
             <td>{{ row.adverb | default: "(None)" }}</td>
             <td>{{ row.direction }}</td>
-            <td><a href="#section-{{ row.user_id }}-{{ row.trial_number }}" class="scroll-link">View</a></td>
+            <td>
+                <a href="#" class="load-trial-card" 
+                   data-type="Phrase2Force" 
+                   data-user="{{ row.user_id }}" 
+                   data-trial="{{ row.trial_number }}" 
+                   data-phrase="{{ row.phrase_text }}" 
+                   data-modifier="{{ row.adverb | default: '(None)' }}" 
+                   data-direction="{{ row.direction }}">
+                    View
+                </a>
+            </td>
         </tr>
         {% endfor %}
     </tbody>
 </table>
 
-<!-- Load jQuery and DataTables -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
-<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+<h2>Force-To-Phrase Trials</h2>
+
+<p>Users placed their hand at the end of a robot arm which would move in random motion. In response, they reported the phrase (shown below) that they thought best corresponded with the provided motion.</p>
+
+<!-- Dropdown for Modifiers -->
+<label for="searchModifier_force2phrase">Filter by Modifier:</label>
+<select id="searchModifier_force2phrase">
+    <option value="">All</option>
+    <option value="(None)">None</option>
+    {% for modifier in site.data.unique_phrase_parts.unique_modifiers %}
+        {% if modifier != "" %}
+            <option value="{{ modifier }}">{{ modifier }}</option>
+        {% endif %}
+    {% endfor %}
+</select>
+
+<!-- Dropdown for Directions -->
+<label for="searchDirection_force2phrase">Filter by Direction:</label>
+<select id="searchDirection_force2phrase">
+    <option value="">All</option>
+    {% for direction in site.data.unique_phrase_parts.unique_directions %}
+        {% if direction != "" %}
+            <option value="{{ direction }}">{{ direction }}</option>
+        {% endif %}
+    {% endfor %}
+</select>
+
+<!-- Data Table -->
+<table id="dataTable_force2phrase" class="display">
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Trial #</th>
+            <th>Phrase Text</th>
+            <th>Modifier</th>
+            <th>Direction</th>
+            <th>Trial Card</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in site.data.force2phrase_corpus %}
+        <tr>
+            <td>{{ row.user_id }}</td>
+            <td>{{ row.trial_number }}</td>
+            <td>{{ row.phrase_text }}</td>
+            <td>{{ row.adverb | default: "(None)" }}</td>
+            <td>{{ row.direction }}</td>
+            <td>
+                <a href="#" class="load-trial-card" 
+                   data-type="Force2Phrase" 
+                   data-user="{{ row.user_id }}" 
+                   data-trial="{{ row.trial_number }}" 
+                   data-phrase="{{ row.phrase_text }}" 
+                   data-modifier="{{ row.adverb | default: '(None)' }}" 
+                   data-direction="{{ row.direction }}">
+                    View
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- Placeholder for dynamically loaded trial cards -->
+<div id="trialCardContainer"></div>
 
 <script>
 $(document).ready(function () {
-    var table = $('#dataTable').DataTable();
+    var phrase2forceTable = $('#dataTable_phrase2force').DataTable();
+    var force2phraseTable = $('#dataTable_force2phrase').DataTable();
 
     // Modifier Dropdown Filtering
-    $('#searchModifier').on('change', function () {
-        var value = this.value;
-        if (value === "(none)") {
-            table.column(2).search("^$", true, false).draw(); // Regex to match empty values
-        } else {
-            table.column(2).search(value).draw();
-        }
+    $('#searchModifier_phrase2force').on('change', function () {
+        phrase2forceTable.column(3).search(this.value ? '^' + this.value + '$' : '', true, false).draw();
+    });
+    $('#searchModifier_force2phrase').on('change', function () {
+        force2phraseTable.column(3).search(this.value ? '^' + this.value + '$' : '', true, false).draw();
     });
 
     // Direction Dropdown Filtering
-    $('#searchDirection').on('change', function () {
-        var value = this.value;
-        if (value) {
-            table.column(3).search('^' + value + '$', true, false).draw(); // Exact match using regex
-        } else {
-            table.column(3).search('').draw(); // Show all when reset
-        }
+    $('#searchDirection_phrase2force').on('change', function () {
+        phrase2forceTable.column(4).search(this.value ? '^' + this.value + '$' : '', true, false).draw();
+    });
+    $('#searchDirection_force2phrase').on('change', function () {
+        force2phraseTable.column(4).search(this.value ? '^' + this.value + '$' : '', true, false).draw();
     });
 
-    // Smooth Scrolling for Links
-    $(".scroll-link").click(function(e) {
+    // Event delegation for loading trial cards dynamically
+    $(document).on("click", ".load-trial-card", function (e) {
         e.preventDefault();
-        var target = $(this).attr("href");
+
+        var trialType = $(this).data("type");
+        var userId = $(this).data("user");
+        var trialNumber = $(this).data("trial");
+        var phraseText = $(this).data("phrase");
+        var modifier = $(this).data("modifier");
+        var direction = $(this).data("direction");
+
+        // Remove any existing trial card
+        $("#trialCardContainer").empty();
+
+        // Determine file paths
+        var videoPath, imagePath;
+        if (trialType === "Phrase2Force") {
+            videoPath = "/assets/videos/phrase_to_force_motions/" + userId + "_" + trialNumber + ".gif";
+            imagePath = "/assets/images/phrase_to_force_force_profiles/" + userId + "_" + trialNumber + ".png";
+        } else {
+            videoPath = "/assets/videos/force_to_phrase/" + userId + "_" + trialNumber + ".gif";
+            imagePath = "/assets/images/force_to_phrase/" + userId + "_" + trialNumber + ".png";
+        }
+
+        // Generate trial card content dynamically
+        var trialCardHtml = `
+            <div class="data-section">
+                <h3>User ${userId}, Trial ${trialNumber} (${trialType.replace("2", "-to-")})</h3>
+                <p><strong>Phrase Text:</strong> ${phraseText}</p>
+                <p><strong>Modifier:</strong> ${modifier}</p>
+                <p><strong>Direction:</strong> ${direction}</p>
+                <figure>
+                    <p><strong>Motion:</strong></p>
+                    <img src="${videoPath}" alt="GIF for User ${userId}, Trial ${trialNumber}" width="400">
+                </figure>
+                <figure>
+                    <p><strong>Force Profile:</strong></p>
+                    <img src="${imagePath}" alt="Plot for User ${userId}, Trial ${trialNumber}" width="400">
+                </figure>
+                <a href="#" class="back-to-top">Back to top</a>
+            </div>
+        `;
+
+
+        // Append new trial card
+        $("#trialCardContainer").append(trialCardHtml);
         $('html, body').animate({
-            scrollTop: $(target).offset().top
+            scrollTop: $("#trialCardContainer").offset().top
         }, 500);
+        
+        $(".back-to-top").click(function(e) {
+        e.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, 500);
+    });
     });
 });
 </script>
-
-<!-- Placeholder for Additional Sections -->
-<h2>Phrase-To-Force Trial Cards</h2>
-{% for row in site.data.phrase2force_corpus %}
-    <div id="section-{{ row.user_id }}-{{ row.trial_number }}" class="data-section">
-        <h3>User {{ row.user_id }}, Trial {{ row.trial_number }}</h3>
-        <p>Modifier: {{ row.adverb | default: "(None)" }}</p>
-        <p>Direction: {{ row.direction }}</p>
-        <p>Additional content about this data collection entry...</p>
-        <a href="/data-collection">Back to top</a>
-    </div>
-{% endfor %}
