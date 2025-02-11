@@ -145,10 +145,20 @@ $(document).ready(function () {
 
     // Modifier Dropdown Filtering
     $('#searchModifier_phrase2force').on('change', function () {
-        phrase2forceTable.column(3).search(this.value ? '^' + this.value + '$' : '', true, false).draw();
+        var value = this.value;
+        if (value === "(None)") {
+            phrase2forceTable.column(3).search("^\\(None\\)|^$", true, false).draw(); // Match "(None)" explicitly or empty values
+        } else {
+            phrase2forceTable.column(3).search("^" + $.fn.dataTable.util.escapeRegex(value) + "$", true, false).draw();
+        }
     });
     $('#searchModifier_force2phrase').on('change', function () {
-        force2phraseTable.column(3).search(this.value ? '^' + this.value + '$' : '', true, false).draw();
+        var value = this.value;
+        if (value === "(None)") {
+            force2phraseTable.column(3).search("^\\(None\\)|^$", true, false).draw(); // Match "(None)" explicitly or empty values
+        } else {
+            force2phraseTable.column(3).search("^" + $.fn.dataTable.util.escapeRegex(value) + "$", true, false).draw();
+        }
     });
 
     // Direction Dropdown Filtering
@@ -208,7 +218,7 @@ $(document).ready(function () {
         $('html, body').animate({
             scrollTop: $("#trialCardContainer").offset().top
         }, 500);
-        
+
         $(".back-to-top").click(function(e) {
         e.preventDefault();
         $("html, body").animate({ scrollTop: 0 }, 500);

@@ -1,419 +1,419 @@
 ,user_id,trial_number,phrase_text,adverb,direction
-0,0,-1,smoothly backward,smoothly,backward
-1,0,0,harshly forward,harshly,forward
-2,0,1,down and to the right,,down-right
-3,0,2,down and to the left,,down-left
-4,0,3,quickly down,quickly,down
-5,0,4,slowly up,slowly,up
-6,0,5,softly to the right and forward,softly,forward-right
-7,0,6,lightly up,lightly,up
-8,0,7,sharply right,sharply,right
-9,0,8,significantly forward and to the right,significantly,forward-right
-10,0,9,gradually right and forward,gradually,forward-right
-11,0,10,sharply up and backward,sharply,backward-up
-12,0,11,smoothly forward and down,smoothly,down-forward
-13,0,12,immediately right and forward,immediately,forward-right
-14,0,13,immediately backward and to the right,immediately,backward-right
-15,0,14,gradually down,gradually,down
-16,0,15,gradually down and right,gradually,down-right
-17,0,16,greatly down and forward,greatly,down-forward
-18,0,17,smoothly down and backward,smoothly,backward-down
-19,0,18,lightly up and to the right,lightly,right-up
-20,0,19,sharply up and to the right,sharply,right-up
-21,0,20,quickly right,quickly,right
-22,0,21,slowly down and to the right,slowly,down-right
-23,0,22,gradually forward and to the left,gradually,forward-left
-24,0,23,softly forward and right,softly,forward-right
-25,0,24,slowly down and right,slowly,down-right
-26,0,25,immediately down and right,immediately,down-right
-27,0,26,immediately up and right,immediately,right-up
-28,0,27,slowly right,slowly,right
-29,0,28,softly up and right,softly,right-up
-30,0,29,harshly down and left,harshly,down-left
-31,0,30,lightly down and right,lightly,down-right
-32,0,31,smoothly left and forward,smoothly,forward-left
-33,0,32,harshly up and right,harshly,right-up
-34,0,33,slightly up and left,slightly,left-up
-35,0,34,softly back,softly,backward
-36,0,35,greatly up and right,greatly,right-up
-37,0,36,down and left,,down-left
-38,0,37,quickly back and right,quickly,backward-right
-39,0,38,smoothly down and left,smoothly,down-left
-40,0,39,slowly forward and right,slowly,forward-right
-41,0,40,down and left,,down-left
-42,1,-1,quickly back,quickly,backward
-43,1,1,to the right,,right
-44,1,2,to the left,,left
-45,1,4,up,,up
-46,1,5,left and down,,down-left
-47,1,6,back and up,,backward-up
-48,1,7,forward and down,,down-forward
-49,1,8,slightly back and left,slightly,backward-left
-50,1,9,slightly down and to the right,slightly,down-right
-51,1,10,smoothly forward and down,smoothly,down-forward
-52,1,11,smoothly up,smoothly,up
-53,1,12,up and to the left,,left-up
-54,1,13,to the right,,right
-55,1,14,lightly down and to the right,lightly,down-right
-56,1,15,smoothly down and back,smoothly,backward-down
-57,1,16,gently down and to the right,softly,down-right
-58,1,17,gently back,softly,backward
-59,1,18,sharply forward and down,sharply,down-forward
-60,1,19,sharply back and up,sharply,backward-up
-61,1,20,quickly up and to the left,quickly,left-up
-62,1,21,slowly back and to the right,slowly,backward-right
-63,1,22,quickly back and to the right,quickly,backward-right
-64,1,23,up and to the left,,left-up
-65,1,24,quickly to the left,quickly,left
-66,1,25,gently back and up,softly,backward-up
-67,1,26,quickly down,quickly,down
-68,1,27,immediately up,immediately,up
-69,1,28,back slightly,slightly,backward
-70,1,29,down and to the left,,down-left
-71,1,30,down and to the right quickly,quickly,down-right
-72,1,31,up and back lightly,lightly,backward-up
-73,1,32,back smoothly,smoothly,backward
-74,1,33,up and to the right quickly,quickly,right-up
-75,1,34,smoothly down and to the right,smoothly,down-right
-76,1,35,significantly up and to the right,significantly,right-up
-77,1,36,significantly to the right,significantly,right
-78,1,37,significantly down,significantly,down
-79,1,38,down and to the right,,down-right
-80,1,39,up and to the right,,right-up
-81,1,40,slightly forward,slightly,forward
-82,1,-1,quickly backward,quickly,backward
-83,1,0,quickly forward,quickly,forward
-84,1,1,sharply right,sharply,right
-85,1,2,sharply left,sharply,left
-86,1,3,quickly down,quickly,down
-87,1,4,significantly up,significantly,up
-88,1,5,quickly forward and left,quickly,forward-left
-89,2,6,quickly up and backward,quickly,backward-up
-90,2,7,greatly down and left,greatly,down-left
-91,2,8,greatly down,greatly,down
-92,2,9,quickly right,quickly,right
-93,2,10,up and forward,,forward-up
-94,2,11,back and down,,backward-down
-95,2,12,softly down and right,softly,down-right
-96,2,13,quickly down and forward,quickly,down-forward
-97,2,14,right and up,,right-up
-98,2,15,down,,down
-99,2,16,quickly down and left,quickly,down-left
-100,2,17,quickly up and forward,quickly,forward-up
-101,2,18,sharply left,sharply,left
-102,2,19,quickly right and backward,quickly,backward-right
-103,2,20,sharply down,sharply,down
-104,2,21,quickly right and backward,quickly,backward-right
-105,2,22,greatly right and backward,greatly,backward-right
-106,2,23,quickly forward,quickly,forward
-107,2,24,gently left and up,softly,left-up
-108,2,25,smoothly right and back,smoothly,backward-right
-109,2,26,greatly up,greatly,up
-110,2,27,up,,up
-111,2,28,gradually right and down,gradually,down-right
-112,2,29,left,,left
-113,2,30,significantly forward,significantly,forward
-114,2,31,quickly forward and to the left,quickly,forward-left
-115,2,32,back and up,,backward-up
-116,2,33,sharply down and left,sharply,down-left
-117,2,34,sharply down and left,sharply,down-left
-118,2,35,gradually down and right,gradually,down-right
-119,2,36,sharply right and forward,sharply,forward-right
-120,2,37,smoothly back and down,smoothly,backward-down
-121,2,38,sharply forward,sharply,forward
-122,2,39,greatly right and down,greatly,down-right
-123,2,40,immediately up,immediately,up
-124,3,-1,backward,,backward
-125,3,0,forward,,forward
-126,3,1,right,,right
-127,3,2,left,,left
-128,3,3,down,,down
-129,3,4,up,,up
-130,3,5,forward and left,,forward-left
-131,3,6,down and right,,down-right
-132,3,7,forward and right,,forward-right
-133,3,8,forward and left,,forward-left
-134,3,9,back and right,,backward-right
-135,3,10,sharply back and left,sharply,backward-left
-136,3,11,smoothly forward and left,smoothly,forward-left
-137,3,12,up and left,,left-up
-138,3,13,sharply forward,sharply,forward
-139,3,14,smoothly back and down,smoothly,backward-down
-140,3,15,smoothly down and left,smoothly,down-left
-141,3,16,smoothly forward and left,smoothly,forward-left
-142,3,17,smoothly up and left,smoothly,left-up
-143,3,18,quickly backward,quickly,backward
-144,3,19,slightly upwards,slightly,up
-145,3,20,up and left,,left-up
-146,3,21,sharply down and right,sharply,down-right
-147,3,22,backwards,,backward
-148,3,23,sharply up and right,sharply,right-up
-149,3,24,up and fowards,,forward-up
-150,3,25,smoothly forward and right,smoothly,forward-right
-151,3,26,sharply to the right,sharply,right
-152,3,27,sharply down and right,sharply,down-right
-153,3,28,up and backwards,,backward-up
-154,3,29,sharply up and left,sharply,left-up
-155,3,30,sharply back and right,sharply,backward-right
-156,3,31,sharply up and right,sharply,right-up
-157,3,32,down and left,,down-left
-158,3,33,smoothly down and left,smoothly,down-left
-159,3,34,sharply down and right,sharply,down-right
-160,3,35,forward and right,,forward-right
-161,3,36,quickly down and right,quickly,down-right
-162,3,37,slightly backwards,slightly,backward
-163,3,38,significantly forward and right,significantly,forward-right
-164,3,39,forward and left,,forward-left
-165,3,40,up and left,,left-up
-166,4,-1,backward,,backward
-167,4,0,forward,,forward
-168,4,1,right,,right
-169,4,2,left,,left
-170,4,3,down,,down
-171,4,4,up,,up
-172,4,5,right and down,,down-right
-173,4,6,forward and down,,down-forward
-174,4,7,quickly right and backward,quickly,backward-right
-175,4,8,quickly right,quickly,right
-176,4,9,left and backward,,backward-left
-177,4,10,right,,right
-178,4,11,left and down,,down-left
-179,4,12,gradually up and right,gradually,right-up
-180,4,13,forward and right,,forward-right
-181,4,14,quickly left,quickly,left
-182,4,15,slowly forward,slowly,forward
-183,4,16,softly forward and left,softly,forward-left
-184,4,17,sharply right and up,sharply,right-up
-185,4,18,lightly back,lightly,backward
-186,4,19,immediately right,immediately,right
-187,4,20,quickly down and back,quickly,backward-down
-188,4,21,quickly up and back,quickly,backward-up
-189,4,22,quickly forward and down,quickly,down-forward
-190,4,23,slowly right,slowly,right
-191,4,24,immediately back and right,immediately,backward-right
-192,4,25,forward,,forward
-193,4,26,lightly down and right,lightly,down-right
-194,4,27,immediately up,immediately,up
-195,4,28,sharply left,sharply,left
-196,4,29,down,,down
-197,4,30,softly down and left,softly,down-left
-198,4,31,sharply right and forward,sharply,forward-right
-199,4,32,back and left,,backward-left
-200,4,33,smoothly right and forward,smoothly,forward-right
-201,4,34,left,,left
-202,4,35,softly forward and right,softly,forward-right
-203,4,36,right,,right
-204,4,37,down and right,,down-right
-205,4,38,slightly back,slightly,backward
-206,4,39,down and back,,backward-down
-207,4,40,sharply back and right,sharply,backward-right
-208,5,-1,backward,,backward
-209,5,0,forward,,forward
-210,5,1,right,,right
-211,5,2,left,,left
-212,5,3,down,,down
-213,5,4,up,,up
-214,5,5,left and forward,,forward-left
-215,5,6,right and down,,down-right
-216,5,7,smoothly right and back,smoothly,backward-right
-217,5,8,slightly back,slightly,backward
-218,5,9,softly down and forward,softly,down-forward
-219,5,10,sharply left and down,sharply,down-left
-220,5,11,quickly right,quickly,right
-221,5,12,slightly back and left,slightly,backward-left
-222,5,13,sharply left and front,sharply,forward-left
-223,5,14,gradually forward,gradually,forward
-224,5,15,down and back,,backward-down
-225,5,16,smoothly left and up,smoothly,left-up
-226,5,17,smoothly front and up,smoothly,forward-up
-227,5,18,sharply right and back,sharply,backward-right
-228,5,19,slightly back and left,slightly,backward-left
-229,5,20,smoothly back and up,smoothly,backward-up
-230,5,21,left and up,,left-up
-231,5,22,up and forward,,forward-up
-232,5,23,up,,up
-233,5,24,immediately right,immediately,right
-234,5,25,immediately forward and up,immediately,forward-up
-235,5,26,smoothly right,smoothly,right
-236,5,27,sharply right and forward,sharply,forward-right
-237,5,28,lightly down,lightly,down
-238,5,29,forward,,forward
-239,5,30,left,,left
-240,5,31,gradually down and back,gradually,backward-down
-241,5,32,smoothly down and back,smoothly,backward-down
-242,5,33,quickly front and right,quickly,forward-right
-243,5,34,softly back,softly,backward
-244,5,35,quickly back,quickly,backward
-245,5,36,back and left,,backward-left
-246,5,37,softly back and up,softly,backward-up
-247,5,38,slightly left and back,slightly,backward-left
-248,5,39,softly left and front,softly,forward-left
-249,5,40,immediately right and back,immediately,backward-right
-250,6,-1,backward,,backward
-251,6,0,sharply forward,sharply,forward
-252,6,1,sharply right,sharply,right
-253,6,2,left,,left
-254,6,3,down,,down
-255,6,4,up,,up
-256,6,5,softly backward and down,softly,backward-down
-257,6,6,up and to the right,,right-up
-258,6,7,down and backwards,,backward-down
-259,6,8,smoothly down and backwards,smoothly,backward-down
-260,6,9,slowly right and backward,slowly,backward-right
-261,6,10,softly down and to the right,softly,down-right
-262,6,11,sharply forward and left,sharply,forward-left
-263,6,12,significantly backward,significantly,backward
-264,6,13,sharply back,sharply,backward
-265,6,14,harshly backwards and to the right,harshly,backward-right
-266,6,15,harshly down and forward,harshly,down-forward
-267,6,16,smoothly back and up,smoothly,backward-up
-268,6,17,sharply right,sharply,right
-269,6,18,lightly up and left,lightly,left-up
-270,6,19,quickly back,quickly,backward
-271,6,20,gradually back and to the left,gradually,backward-left
-272,6,21,smoothly forward and up,smoothly,forward-up
-273,6,22,back,,backward
-274,6,23,back and to the left,,backward-left
-275,6,24,quickly up and left,quickly,left-up
-276,6,25,gradually right and down,gradually,down-right
-277,6,26,back and down,,backward-down
-278,6,27,quickly forward and up,quickly,forward-up
-279,6,28,smoothly backward and to the right,smoothly,backward-right
-280,6,29,immediately forward,immediately,forward
-281,6,30,immediately up and to the left,immediately,left-up
-282,6,31,smoothly left,smoothly,left
-283,6,32,smoothly back,smoothly,backward
-284,6,33,smoothly down and backward,smoothly,backward-down
-285,6,34,sharply left and down,sharply,down-left
-286,6,35,back and down,,backward-down
-287,6,36,quickly up and left,quickly,left-up
-288,6,37,greatly down and to the right,greatly,down-right
-289,6,38,significantly forward and right,significantly,forward-right
-290,6,39,sharply right,sharply,right
-291,6,40,down and forward,,down-forward
-292,7,-1,smoothly backward,smoothly,backward
-293,7,0,quickly forward,quickly,forward
-294,7,1,sharply right,sharply,right
-295,7,2,harshly left,harshly,left
-296,7,3,immediately down,immediately,down
-297,7,4,immediately up,immediately,up
-298,7,5,harshly forward and left,harshly,forward-left
-299,7,6,smoothly down and left,smoothly,down-left
-300,7,7,gradually left,gradually,left
-301,7,8,sharply up,sharply,up
-302,7,9,sharply backward,sharply,backward
-303,7,10,quickly down and right,quickly,down-right
-304,7,11,gradually right and down,gradually,down-right
-305,7,12,backward,,backward
-306,7,13,sharply left,sharply,left
-307,7,14,quickly right,quickly,right
-308,7,15,down and left,,down-left
-309,7,16,immediately down and left,immediately,down-left
-310,7,17,smoothly forward,smoothly,forward
-311,7,18,sharply up and left,sharply,left-up
-312,7,19,quickly right and down,quickly,down-right
-313,7,20,immediately forward and left,immediately,forward-left
-314,7,21,quickly up and left,quickly,left-up
-315,7,22,down and right,,down-right
-316,7,23,slightly up,slightly,up
-317,7,24,sharply right,sharply,right
-318,7,25,quickly forward and down,quickly,down-forward
-319,7,26,down and backward,,backward-down
-320,7,27,immediately forward and right,immediately,forward-right
-321,7,28,slightly down,slightly,down
-322,7,29,greatly left,greatly,left
-323,7,30,forward and right,,forward-right
-324,7,31,up and left,,left-up
-325,7,32,immediately forward and left,immediately,forward-left
-326,7,33,quickly forward and up,quickly,forward-up
-327,7,34,smoothly forward and right,smoothly,forward-right
-328,7,35,harshly left and down,harshly,down-left
-329,7,36,significantly back,significantly,backward
-330,7,37,gradually right and down,gradually,down-right
-331,7,38,quickly down,quickly,down
-332,7,39,gradually down,gradually,down
-333,7,40,slightly back and up,slightly,backward-up
-334,8,-1,down and back,,backward-down
-335,8,0,quickly forward,quickly,forward
-336,8,1,quickly to the right,quickly,right
-337,8,2,quickly to the left,quickly,left
-338,8,3,quickly down,quickly,down
-339,8,4,up,,up
-340,8,5,down and right,,down-right
-341,8,6,harshly right and back,harshly,backward-right
-342,8,7,quickly up and forward,quickly,forward-up
-343,8,8,sharply right,sharply,right
-344,8,9,down and left,,down-left
-345,8,10,sharply up,sharply,up
-346,8,11,quickly up and left,quickly,left-up
-347,8,12,immediately up and right,immediately,right-up
-348,8,13,immediately down and forward,immediately,down-forward
-349,8,14,quickly down,quickly,down
-350,8,15,up,,up
-351,8,16,sharply to the right,sharply,right
-352,8,17,gradually down and forward,gradually,down-forward
-353,8,18,sharply down and right,sharply,down-right
-354,8,19,up and right,,right-up
-355,8,20,down and back,,backward-down
-356,8,21,right and back,,backward-right
-357,8,22,down and left,,down-left
-358,8,23,sharply forward,sharply,forward
-359,8,24,right immediately,immediately,right
-360,8,25,right and forward immediately,immediately,forward-right
-361,8,26,up and right,,right-up
-362,8,27,up and back,,backward-up
-363,8,28,down,,down
-364,8,29,forward,,forward
-365,8,30,quickly up and right,quickly,right-up
-366,8,31,right,,right
-367,8,32,down and forward,,down-forward
-368,8,33,smoothly down and right,smoothly,down-right
-369,8,34,quickly up and right,quickly,right-up
-370,8,35,gradually back,gradually,backward
-371,8,36,slowly down and left,slowly,down-left
-372,8,37,harshly up and back,harshly,backward-up
-373,8,38,slowly up and forward,slowly,forward-up
-374,8,39,softly to the right,softly,right
-375,8,40,slightly up and forward,slightly,forward-up
-376,9,-1,quickly backward,quickly,backward
-377,9,0,quickly forward,quickly,forward
-378,9,1,quicky right,quickly,right
-379,9,2,quickly left,quickly,left
-380,9,3,down,,down
-381,9,4,up,,up
-382,9,5,slowly right and forward,slowly,forward-right
-383,9,6,slightly right and forward,slightly,forward-right
-384,9,7,harshly backward and up,harshly,backward-up
-385,9,8,right and up,,right-up
-386,9,9,harshly right and forward,harshly,forward-right
-387,9,10,significantly backward and up,significantly,backward-up
-388,9,11,quickly right and backward,quickly,backward-right
-389,9,12,gradually backward,gradually,backward
-390,9,13,slightly right and forward,slightly,forward-right
-391,9,14,sharply right and backward,sharply,backward-right
-392,9,15,right and backward,,backward-right
-393,9,16,significantly right and forward,significantly,forward-right
-394,9,17,quickly right and backward,quickly,backward-right
-395,9,18,smoothly down,smoothly,down
-396,9,19,quickly left and backward,quickly,backward-left
-397,9,20,harshly left and backward,harshly,backward-left
-398,9,21,forward,,forward
-399,9,22,softly up and backward,softly,backward-up
-400,9,23,sharply left and backward,sharply,backward-left
-401,9,24,right and backward,,backward-right
-402,9,25,quickly left and backward,quickly,backward-left
-403,9,26,sharply backward,sharply,backward
-404,9,27,slighlty down and forward,slightly,down-forward
-405,9,28,right and up,,right-up
-406,9,29,slightly right and forward,slightly,forward-right
-407,9,30,greatly down and backward,greatly,backward-down
-408,9,31,down and backward,,backward-down
-409,9,32,quickly left and up,quickly,left-up
-410,9,33,smoothly right,smoothly,right
-411,9,34,quickly down and backward,quickly,backward-down
-412,9,35,greatly up and backward,greatly,backward-up
-413,9,36,greatly left and forward,greatly,forward-left
-414,9,37,left and forward,,forward-left
-415,9,38,slowly down and backward,slowly,backward-down
-416,9,39,slightly up,slightly,up
-417,9,40,backward,,backward
+0,0,0,smoothly backward,smoothly,backward
+1,0,1,harshly forward,harshly,forward
+2,0,2,down and to the right,,down-right
+3,0,3,down and to the left,,down-left
+4,0,4,quickly down,quickly,down
+5,0,5,slowly up,slowly,up
+6,0,6,softly to the right and forward,softly,forward-right
+7,0,7,lightly up,lightly,up
+8,0,8,sharply right,sharply,right
+9,0,9,significantly forward and to the right,significantly,forward-right
+10,0,10,gradually right and forward,gradually,forward-right
+11,0,11,sharply up and backward,sharply,backward-up
+12,0,12,smoothly forward and down,smoothly,down-forward
+13,0,13,immediately right and forward,immediately,forward-right
+14,0,14,immediately backward and to the right,immediately,backward-right
+15,0,15,gradually down,gradually,down
+16,0,16,gradually down and right,gradually,down-right
+17,0,17,greatly down and forward,greatly,down-forward
+18,0,18,smoothly down and backward,smoothly,backward-down
+19,0,19,lightly up and to the right,lightly,right-up
+20,0,20,sharply up and to the right,sharply,right-up
+21,0,21,quickly right,quickly,right
+22,0,22,slowly down and to the right,slowly,down-right
+23,0,23,gradually forward and to the left,gradually,forward-left
+24,0,24,softly forward and right,softly,forward-right
+25,0,25,slowly down and right,slowly,down-right
+26,0,26,immediately down and right,immediately,down-right
+27,0,27,immediately up and right,immediately,right-up
+28,0,28,slowly right,slowly,right
+29,0,29,softly up and right,softly,right-up
+30,0,30,harshly down and left,harshly,down-left
+31,0,31,lightly down and right,lightly,down-right
+32,0,32,smoothly left and forward,smoothly,forward-left
+33,0,33,harshly up and right,harshly,right-up
+34,0,34,slightly up and left,slightly,left-up
+35,0,35,softly back,softly,backward
+36,0,36,greatly up and right,greatly,right-up
+37,0,37,down and left,,down-left
+38,0,38,quickly back and right,quickly,backward-right
+39,0,39,smoothly down and left,smoothly,down-left
+40,0,40,slowly forward and right,slowly,forward-right
+41,0,41,down and left,,down-left
+42,1,0,quickly back,quickly,backward
+43,1,2,to the right,,right
+44,1,3,to the left,,left
+45,1,5,up,,up
+46,1,6,left and down,,down-left
+47,1,7,back and up,,backward-up
+48,1,8,forward and down,,down-forward
+49,1,9,slightly back and left,slightly,backward-left
+50,1,10,slightly down and to the right,slightly,down-right
+51,1,11,smoothly forward and down,smoothly,down-forward
+52,1,12,smoothly up,smoothly,up
+53,1,13,up and to the left,,left-up
+54,1,14,to the right,,right
+55,1,15,lightly down and to the right,lightly,down-right
+56,1,16,smoothly down and back,smoothly,backward-down
+57,1,17,gently down and to the right,softly,down-right
+58,1,18,gently back,softly,backward
+59,1,19,sharply forward and down,sharply,down-forward
+60,1,20,sharply back and up,sharply,backward-up
+61,1,21,quickly up and to the left,quickly,left-up
+62,1,22,slowly back and to the right,slowly,backward-right
+63,1,23,quickly back and to the right,quickly,backward-right
+64,1,24,up and to the left,,left-up
+65,1,25,quickly to the left,quickly,left
+66,1,26,gently back and up,softly,backward-up
+67,1,27,quickly down,quickly,down
+68,1,28,immediately up,immediately,up
+69,1,29,back slightly,slightly,backward
+70,1,30,down and to the left,,down-left
+71,1,31,down and to the right quickly,quickly,down-right
+72,1,32,up and back lightly,lightly,backward-up
+73,1,33,back smoothly,smoothly,backward
+74,1,34,up and to the right quickly,quickly,right-up
+75,1,35,smoothly down and to the right,smoothly,down-right
+76,1,36,significantly up and to the right,significantly,right-up
+77,1,37,significantly to the right,significantly,right
+78,1,38,significantly down,significantly,down
+79,1,39,down and to the right,,down-right
+80,1,40,up and to the right,,right-up
+81,1,41,slightly forward,slightly,forward
+82,1,0,quickly backward,quickly,backward
+83,1,1,quickly forward,quickly,forward
+84,1,2,sharply right,sharply,right
+85,1,3,sharply left,sharply,left
+86,1,4,quickly down,quickly,down
+87,1,5,significantly up,significantly,up
+88,1,6,quickly forward and left,quickly,forward-left
+89,2,7,quickly up and backward,quickly,backward-up
+90,2,8,greatly down and left,greatly,down-left
+91,2,9,greatly down,greatly,down
+92,2,10,quickly right,quickly,right
+93,2,11,up and forward,,forward-up
+94,2,12,back and down,,backward-down
+95,2,13,softly down and right,softly,down-right
+96,2,14,quickly down and forward,quickly,down-forward
+97,2,15,right and up,,right-up
+98,2,16,down,,down
+99,2,17,quickly down and left,quickly,down-left
+100,2,18,quickly up and forward,quickly,forward-up
+101,2,19,sharply left,sharply,left
+102,2,20,quickly right and backward,quickly,backward-right
+103,2,21,sharply down,sharply,down
+104,2,22,quickly right and backward,quickly,backward-right
+105,2,23,greatly right and backward,greatly,backward-right
+106,2,24,quickly forward,quickly,forward
+107,2,25,gently left and up,softly,left-up
+108,2,26,smoothly right and back,smoothly,backward-right
+109,2,27,greatly up,greatly,up
+110,2,28,up,,up
+111,2,29,gradually right and down,gradually,down-right
+112,2,30,left,,left
+113,2,31,significantly forward,significantly,forward
+114,2,32,quickly forward and to the left,quickly,forward-left
+115,2,33,back and up,,backward-up
+116,2,34,sharply down and left,sharply,down-left
+117,2,35,sharply down and left,sharply,down-left
+118,2,36,gradually down and right,gradually,down-right
+119,2,37,sharply right and forward,sharply,forward-right
+120,2,38,smoothly back and down,smoothly,backward-down
+121,2,39,sharply forward,sharply,forward
+122,2,40,greatly right and down,greatly,down-right
+123,2,41,immediately up,immediately,up
+124,3,0,backward,,backward
+125,3,1,forward,,forward
+126,3,2,right,,right
+127,3,3,left,,left
+128,3,4,down,,down
+129,3,5,up,,up
+130,3,6,forward and left,,forward-left
+131,3,7,down and right,,down-right
+132,3,8,forward and right,,forward-right
+133,3,9,forward and left,,forward-left
+134,3,10,back and right,,backward-right
+135,3,11,sharply back and left,sharply,backward-left
+136,3,12,smoothly forward and left,smoothly,forward-left
+137,3,13,up and left,,left-up
+138,3,14,sharply forward,sharply,forward
+139,3,15,smoothly back and down,smoothly,backward-down
+140,3,16,smoothly down and left,smoothly,down-left
+141,3,17,smoothly forward and left,smoothly,forward-left
+142,3,18,smoothly up and left,smoothly,left-up
+143,3,19,quickly backward,quickly,backward
+144,3,20,slightly upwards,slightly,up
+145,3,21,up and left,,left-up
+146,3,22,sharply down and right,sharply,down-right
+147,3,23,backwards,,backward
+148,3,24,sharply up and right,sharply,right-up
+149,3,25,up and fowards,,forward-up
+150,3,26,smoothly forward and right,smoothly,forward-right
+151,3,27,sharply to the right,sharply,right
+152,3,28,sharply down and right,sharply,down-right
+153,3,29,up and backwards,,backward-up
+154,3,30,sharply up and left,sharply,left-up
+155,3,31,sharply back and right,sharply,backward-right
+156,3,32,sharply up and right,sharply,right-up
+157,3,33,down and left,,down-left
+158,3,34,smoothly down and left,smoothly,down-left
+159,3,35,sharply down and right,sharply,down-right
+160,3,36,forward and right,,forward-right
+161,3,37,quickly down and right,quickly,down-right
+162,3,38,slightly backwards,slightly,backward
+163,3,39,significantly forward and right,significantly,forward-right
+164,3,40,forward and left,,forward-left
+165,3,41,up and left,,left-up
+166,4,0,backward,,backward
+167,4,1,forward,,forward
+168,4,2,right,,right
+169,4,3,left,,left
+170,4,4,down,,down
+171,4,5,up,,up
+172,4,6,right and down,,down-right
+173,4,7,forward and down,,down-forward
+174,4,8,quickly right and backward,quickly,backward-right
+175,4,9,quickly right,quickly,right
+176,4,10,left and backward,,backward-left
+177,4,11,right,,right
+178,4,12,left and down,,down-left
+179,4,13,gradually up and right,gradually,right-up
+180,4,14,forward and right,,forward-right
+181,4,15,quickly left,quickly,left
+182,4,16,slowly forward,slowly,forward
+183,4,17,softly forward and left,softly,forward-left
+184,4,18,sharply right and up,sharply,right-up
+185,4,19,lightly back,lightly,backward
+186,4,20,immediately right,immediately,right
+187,4,21,quickly down and back,quickly,backward-down
+188,4,22,quickly up and back,quickly,backward-up
+189,4,23,quickly forward and down,quickly,down-forward
+190,4,24,slowly right,slowly,right
+191,4,25,immediately back and right,immediately,backward-right
+192,4,26,forward,,forward
+193,4,27,lightly down and right,lightly,down-right
+194,4,28,immediately up,immediately,up
+195,4,29,sharply left,sharply,left
+196,4,30,down,,down
+197,4,31,softly down and left,softly,down-left
+198,4,32,sharply right and forward,sharply,forward-right
+199,4,33,back and left,,backward-left
+200,4,34,smoothly right and forward,smoothly,forward-right
+201,4,35,left,,left
+202,4,36,softly forward and right,softly,forward-right
+203,4,37,right,,right
+204,4,38,down and right,,down-right
+205,4,39,slightly back,slightly,backward
+206,4,40,down and back,,backward-down
+207,4,41,sharply back and right,sharply,backward-right
+208,5,0,backward,,backward
+209,5,1,forward,,forward
+210,5,2,right,,right
+211,5,3,left,,left
+212,5,4,down,,down
+213,5,5,up,,up
+214,5,6,left and forward,,forward-left
+215,5,7,right and down,,down-right
+216,5,8,smoothly right and back,smoothly,backward-right
+217,5,9,slightly back,slightly,backward
+218,5,10,softly down and forward,softly,down-forward
+219,5,11,sharply left and down,sharply,down-left
+220,5,12,quickly right,quickly,right
+221,5,13,slightly back and left,slightly,backward-left
+222,5,14,sharply left and front,sharply,forward-left
+223,5,15,gradually forward,gradually,forward
+224,5,16,down and back,,backward-down
+225,5,17,smoothly left and up,smoothly,left-up
+226,5,18,smoothly front and up,smoothly,forward-up
+227,5,19,sharply right and back,sharply,backward-right
+228,5,20,slightly back and left,slightly,backward-left
+229,5,21,smoothly back and up,smoothly,backward-up
+230,5,22,left and up,,left-up
+231,5,23,up and forward,,forward-up
+232,5,24,up,,up
+233,5,25,immediately right,immediately,right
+234,5,26,immediately forward and up,immediately,forward-up
+235,5,27,smoothly right,smoothly,right
+236,5,28,sharply right and forward,sharply,forward-right
+237,5,29,lightly down,lightly,down
+238,5,30,forward,,forward
+239,5,31,left,,left
+240,5,32,gradually down and back,gradually,backward-down
+241,5,33,smoothly down and back,smoothly,backward-down
+242,5,34,quickly front and right,quickly,forward-right
+243,5,35,softly back,softly,backward
+244,5,36,quickly back,quickly,backward
+245,5,37,back and left,,backward-left
+246,5,38,softly back and up,softly,backward-up
+247,5,39,slightly left and back,slightly,backward-left
+248,5,40,softly left and front,softly,forward-left
+249,5,41,immediately right and back,immediately,backward-right
+250,6,0,backward,,backward
+251,6,1,sharply forward,sharply,forward
+252,6,2,sharply right,sharply,right
+253,6,3,left,,left
+254,6,4,down,,down
+255,6,5,up,,up
+256,6,6,softly backward and down,softly,backward-down
+257,6,7,up and to the right,,right-up
+258,6,8,down and backwards,,backward-down
+259,6,9,smoothly down and backwards,smoothly,backward-down
+260,6,10,slowly right and backward,slowly,backward-right
+261,6,11,softly down and to the right,softly,down-right
+262,6,12,sharply forward and left,sharply,forward-left
+263,6,13,significantly backward,significantly,backward
+264,6,14,sharply back,sharply,backward
+265,6,15,harshly backwards and to the right,harshly,backward-right
+266,6,16,harshly down and forward,harshly,down-forward
+267,6,17,smoothly back and up,smoothly,backward-up
+268,6,18,sharply right,sharply,right
+269,6,19,lightly up and left,lightly,left-up
+270,6,20,quickly back,quickly,backward
+271,6,21,gradually back and to the left,gradually,backward-left
+272,6,22,smoothly forward and up,smoothly,forward-up
+273,6,23,back,,backward
+274,6,24,back and to the left,,backward-left
+275,6,25,quickly up and left,quickly,left-up
+276,6,26,gradually right and down,gradually,down-right
+277,6,27,back and down,,backward-down
+278,6,28,quickly forward and up,quickly,forward-up
+279,6,29,smoothly backward and to the right,smoothly,backward-right
+280,6,30,immediately forward,immediately,forward
+281,6,31,immediately up and to the left,immediately,left-up
+282,6,32,smoothly left,smoothly,left
+283,6,33,smoothly back,smoothly,backward
+284,6,34,smoothly down and backward,smoothly,backward-down
+285,6,35,sharply left and down,sharply,down-left
+286,6,36,back and down,,backward-down
+287,6,37,quickly up and left,quickly,left-up
+288,6,38,greatly down and to the right,greatly,down-right
+289,6,39,significantly forward and right,significantly,forward-right
+290,6,40,sharply right,sharply,right
+291,6,41,down and forward,,down-forward
+292,7,0,smoothly backward,smoothly,backward
+293,7,1,quickly forward,quickly,forward
+294,7,2,sharply right,sharply,right
+295,7,3,harshly left,harshly,left
+296,7,4,immediately down,immediately,down
+297,7,5,immediately up,immediately,up
+298,7,6,harshly forward and left,harshly,forward-left
+299,7,7,smoothly down and left,smoothly,down-left
+300,7,8,gradually left,gradually,left
+301,7,9,sharply up,sharply,up
+302,7,10,sharply backward,sharply,backward
+303,7,11,quickly down and right,quickly,down-right
+304,7,12,gradually right and down,gradually,down-right
+305,7,13,backward,,backward
+306,7,14,sharply left,sharply,left
+307,7,15,quickly right,quickly,right
+308,7,16,down and left,,down-left
+309,7,17,immediately down and left,immediately,down-left
+310,7,18,smoothly forward,smoothly,forward
+311,7,19,sharply up and left,sharply,left-up
+312,7,20,quickly right and down,quickly,down-right
+313,7,21,immediately forward and left,immediately,forward-left
+314,7,22,quickly up and left,quickly,left-up
+315,7,23,down and right,,down-right
+316,7,24,slightly up,slightly,up
+317,7,25,sharply right,sharply,right
+318,7,26,quickly forward and down,quickly,down-forward
+319,7,27,down and backward,,backward-down
+320,7,28,immediately forward and right,immediately,forward-right
+321,7,29,slightly down,slightly,down
+322,7,30,greatly left,greatly,left
+323,7,31,forward and right,,forward-right
+324,7,32,up and left,,left-up
+325,7,33,immediately forward and left,immediately,forward-left
+326,7,34,quickly forward and up,quickly,forward-up
+327,7,35,smoothly forward and right,smoothly,forward-right
+328,7,36,harshly left and down,harshly,down-left
+329,7,37,significantly back,significantly,backward
+330,7,38,gradually right and down,gradually,down-right
+331,7,39,quickly down,quickly,down
+332,7,40,gradually down,gradually,down
+333,7,41,slightly back and up,slightly,backward-up
+334,8,0,down and back,,backward-down
+335,8,1,quickly forward,quickly,forward
+336,8,2,quickly to the right,quickly,right
+337,8,3,quickly to the left,quickly,left
+338,8,4,quickly down,quickly,down
+339,8,5,up,,up
+340,8,6,down and right,,down-right
+341,8,7,harshly right and back,harshly,backward-right
+342,8,8,quickly up and forward,quickly,forward-up
+343,8,9,sharply right,sharply,right
+344,8,10,down and left,,down-left
+345,8,11,sharply up,sharply,up
+346,8,12,quickly up and left,quickly,left-up
+347,8,13,immediately up and right,immediately,right-up
+348,8,14,immediately down and forward,immediately,down-forward
+349,8,15,quickly down,quickly,down
+350,8,16,up,,up
+351,8,17,sharply to the right,sharply,right
+352,8,18,gradually down and forward,gradually,down-forward
+353,8,19,sharply down and right,sharply,down-right
+354,8,20,up and right,,right-up
+355,8,21,down and back,,backward-down
+356,8,22,right and back,,backward-right
+357,8,23,down and left,,down-left
+358,8,24,sharply forward,sharply,forward
+359,8,25,right immediately,immediately,right
+360,8,26,right and forward immediately,immediately,forward-right
+361,8,27,up and right,,right-up
+362,8,28,up and back,,backward-up
+363,8,29,down,,down
+364,8,30,forward,,forward
+365,8,31,quickly up and right,quickly,right-up
+366,8,32,right,,right
+367,8,33,down and forward,,down-forward
+368,8,34,smoothly down and right,smoothly,down-right
+369,8,35,quickly up and right,quickly,right-up
+370,8,36,gradually back,gradually,backward
+371,8,37,slowly down and left,slowly,down-left
+372,8,38,harshly up and back,harshly,backward-up
+373,8,39,slowly up and forward,slowly,forward-up
+374,8,40,softly to the right,softly,right
+375,8,41,slightly up and forward,slightly,forward-up
+376,9,0,quickly backward,quickly,backward
+377,9,1,quickly forward,quickly,forward
+378,9,2,quicky right,quickly,right
+379,9,3,quickly left,quickly,left
+380,9,4,down,,down
+381,9,5,up,,up
+382,9,6,slowly right and forward,slowly,forward-right
+383,9,7,slightly right and forward,slightly,forward-right
+384,9,8,harshly backward and up,harshly,backward-up
+385,9,9,right and up,,right-up
+386,9,10,harshly right and forward,harshly,forward-right
+387,9,11,significantly backward and up,significantly,backward-up
+388,9,12,quickly right and backward,quickly,backward-right
+389,9,13,gradually backward,gradually,backward
+390,9,14,slightly right and forward,slightly,forward-right
+391,9,15,sharply right and backward,sharply,backward-right
+392,9,16,right and backward,,backward-right
+393,9,17,significantly right and forward,significantly,forward-right
+394,9,18,quickly right and backward,quickly,backward-right
+395,9,19,smoothly down,smoothly,down
+396,9,20,quickly left and backward,quickly,backward-left
+397,9,21,harshly left and backward,harshly,backward-left
+398,9,22,forward,,forward
+399,9,23,softly up and backward,softly,backward-up
+400,9,24,sharply left and backward,sharply,backward-left
+401,9,25,right and backward,,backward-right
+402,9,26,quickly left and backward,quickly,backward-left
+403,9,27,sharply backward,sharply,backward
+404,9,28,slighlty down and forward,slightly,down-forward
+405,9,29,right and up,,right-up
+406,9,30,slightly right and forward,slightly,forward-right
+407,9,31,greatly down and backward,greatly,backward-down
+408,9,32,down and backward,,backward-down
+409,9,33,quickly left and up,quickly,left-up
+410,9,34,smoothly right,smoothly,right
+411,9,35,quickly down and backward,quickly,backward-down
+412,9,36,greatly up and backward,greatly,backward-up
+413,9,37,greatly left and forward,greatly,forward-left
+414,9,38,left and forward,,forward-left
+415,9,39,slowly down and backward,slowly,backward-down
+416,9,40,slightly up,slightly,up
+417,9,41,backward,,backward
