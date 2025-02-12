@@ -186,10 +186,10 @@ $(document).ready(function () {
         // Determine file paths
         var videoPath, imagePath;
         if (trialType === "Phrase2Force") {
-            videoPath = "/assets/videos/phrase_to_force_motions/" + userId + "_" + trialNumber + ".gif";
+            videoPath = "/assets/videos/phrase_to_force_motions/" + userId + "_" + trialNumber + ".mp4";
             imagePath = "/assets/images/phrase_to_force_force_profiles/" + userId + "_" + trialNumber + ".png";
         } else {
-            videoPath = "/assets/videos/force_to_phrase/" + userId + "_" + trialNumber + ".gif";
+            videoPath = "/assets/videos/force_to_phrase/" + userId + "_" + trialNumber + ".mp4";
             imagePath = "/assets/images/force_to_phrase/" + userId + "_" + trialNumber + ".png";
         }
 
@@ -202,7 +202,9 @@ $(document).ready(function () {
                 <p><strong>Direction:</strong> ${direction}</p>
                 <figure>
                     <p><strong>Motion:</strong></p>
-                    <img src="${videoPath}" alt="GIF for User ${userId}, Trial ${trialNumber}" width="400">
+                    <video autoplay loop muted playsinline alt="Clip for User ${userId}, Trial ${trialNumber}" width="400">
+                        <source src="${videoPath}" alt="Clip for User ${userId}, Trial ${trialNumber}" type="video/mp4">
+                    </video>
                 </figure>
                 <figure>
                     <p><strong>Force Profile:</strong></p>
