@@ -39,7 +39,7 @@ We conducted an observational study of a physical therapist demonstrating variou
 
 To train and evaluate the shared language-force embedding framework, we collected data from 10 participants interacting with a robot arm. Each participant underwent 2 procedures, Phrase-To-Force and Force-To-Phrase, each examining translation from one modality to the other.
 
-Insert data download
+{% include download_data.html %}
 
 <h2 class="section-title"><a href="/results/">Results 🔗</a></h2>
 

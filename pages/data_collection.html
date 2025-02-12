@@ -9,6 +9,10 @@ permalink: /data-collection/
 <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 
+{% include download_data.html %}
+
+<br></br>
+
 <h2>Phrase-To-Force Trials</h2>
 
 <p>Users were provided with the phrases below. In response, they dragged the end of a robot arm in the motion that they thought best corresponded with the provided phrase.</p>
@@ -134,6 +138,8 @@ permalink: /data-collection/
         {% endfor %}
     </tbody>
 </table>
+
+<br></br>
 
 <!-- Placeholder for dynamically loaded trial cards -->
 <div id="trialCardContainer"></div>
