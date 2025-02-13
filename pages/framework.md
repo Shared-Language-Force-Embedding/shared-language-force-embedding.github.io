@@ -103,3 +103,15 @@ Our framework consisted of a dual autoencoder model that was trained to encode i
     </table>
     <figcaption style="text-align: center;">Detailed breakdown of the dimensions of the inputs, layers, and outputs comprising each autoencoder responsible for encoding and decoding its assigned input type. Since we aim to develop a shared latent space for force and language, the latent space vector has the same dimensions across all autoencoders.</figcaption>
 </figure>
+
+## Hyperparameters
+
+Dropout chance: 10%
+
+Number of training epochs: 1024
+
+Adam learning rate: 0.001
+
+Force profiles were augmented with per sample random noise residuals with mean 0 and variance 1
+
+The SVM model used an rbf kernel with regularization parameter 32.0
