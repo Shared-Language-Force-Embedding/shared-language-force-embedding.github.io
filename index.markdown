@@ -45,7 +45,7 @@ To train and evaluate the shared language-force embedding framework, we collecte
 
 We evaluated 2 variations of our framework against 3 other baseline models. Our experiments were designed to assess the performance of our framework on language-force translation and generalization to unseen examples. It also tested the impact of the framework leveraging different phrase representations.
 
-Insert classical results, modifier generalization results, and direction generalization results.
+{% include overall_results.html %}
 
 ## Code
 
