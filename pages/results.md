@@ -4,6 +4,28 @@ title: Results
 permalink: /results/
 ---
 
+## Metrics
+
+1. **Force Profile Accuracy (FPAcc):** Measures how closely the predicted force profile $\hat{x}_f$ matches the ground truth $x_f$ using Mean Squared Error (MSE).
+
+$$\text{FPAcc}=\text{MSE}(\hat{x}_f,x_f)$$
+
+2. **Force Direction Accuracy (FDAcc):** Evaluates directional alignment between predicted impulse $\hat{J}(T)$ and ground truth impulse $J(T)$ using cosine similarity.
+
+$$\text{FDAcc}=\frac{\hat{J}(T)\cdot J(T)}{||\hat{J}(T)||\cdot||J(T)||}$$
+
+3. **Modifier Similarity (ModSim):** Cosine similarity between the predicted modifier $\hat{w}_m$ and the ground truth $w_m$ using SBERT embeddings $E$:
+
+$$\text{ModSim}=\frac{E(\hat{w}_m)\cdot E(w_m)}{||E(\hat{w}_m)||\cdot||E(w_m)||}$$
+
+4. **Direction Similarity (DirSim):** Cosine similarity between predicted direction words $\hat{w}_d$ and ground truth $w_d$:
+
+$$\text{DirSim}=\frac{E(\hat{w}_d)\cdot E(w_d)}{||E(\hat{w}_d)||\cdot||E(w_d)||}$$
+
+5. **Full Phrase Similarity (PhraseSim):**  Average of $\text{ModSim}$ and $\text{DirSim}$:
+
+$$\text{PhraseSim}=\frac{1}{2}\left(\text{ModSim}+\text{DirSim}\right)$$
+
 ## Overall Results
 
 {% include overall_results.html %}
