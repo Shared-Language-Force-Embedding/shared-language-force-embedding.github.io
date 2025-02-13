@@ -26,6 +26,18 @@ $$\text{DirSim}=\frac{E(\hat{w}_d)\cdot E(w_d)}{||E(\hat{w}_d)||\cdot||E(w_d)||}
 
 $$\text{PhraseSim}=\frac{1}{2}\left(\text{ModSim}+\text{DirSim}\right)$$
 
+## Baselines
+
+- $\text{SVM/KNN}$: Uses SVM to classify force signals into phrases and KNN to predict force profiles from phrases.
+
+- $\text{DMLP}_B$: Direct MLP mapping between force profiles and binary phrase vectors without a shared latent space.
+
+- $\text{DMLP}_G$: Direct MLP mapping between force profiles and GloVe-embedded phrases without a shared latent space.
+
+- $\text{DAE}_B$ (Ours): Dual autoencoder with binary phrase vectors.
+
+- $\text{DAE}_G$ (Ours): Dual autoencoder with GloVe embeddings.
+
 ## Overall Results
 
 {% include overall_results.html %}
