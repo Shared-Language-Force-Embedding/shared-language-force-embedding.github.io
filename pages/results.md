@@ -26,7 +26,7 @@ $$\text{DirSim}=\frac{E(\hat{w}_d)\cdot E(w_d)}{||E(\hat{w}_d)||\cdot||E(w_d)||}
 
 $$\text{PhraseSim}=\frac{1}{2}\left(\text{ModSim}+\text{DirSim}\right)$$
 
-## Baselines
+## Baseline Models
 
 - $\text{SVM/KNN}$: Uses SVM to classify force signals into phrases and KNN to predict force profiles from phrases.
 
@@ -48,9 +48,18 @@ To evaluate the effectiveness of our cross-modality embedding framework, we cond
 
 ## Overall Results
 
+Our framework outperforms baseline models in both force-to-language and language-to-force translation, demonstrating the effectiveness of a shared latent space.
+
 {% include overall_results.html %}
 
-<h2>Out-of-Distribution Modifiers</h2>
+## Analysis
+
+Our results showed that the dual autoencoder (DAE) models significantly outperformed baseline approaches in both force-to-language and language-to-force translation. The DAE models achieved 20-30% better performance than simpler SVM and MLP-based baselines, demonstrating that a shared latent space effectively captures the bidirectional relationship between physical force and linguistic descriptions. Additionally, the models successfully generalized to unseen modifiers and directions, particularly when using GloVe embeddings, which improved force profile reconstruction. However, we observed a trade-off between force reconstruction accuracy and linguistic precision: the GloVe-based model ($\text{DAE}_G$) was better at estimating realistic force trajectories, while the binary phrase vector model ($\text{DAE}_B$) provided more precise textual descriptions. These findings confirm that integrating force and language into a unified representation enhances natural human-robot communication, with different representation choices offering advantages depending on whether force accuracy or linguistic fidelity is prioritized.
+
+## Additional Results
+
+<h3>Out-of-Distribution Modifiers</h3>
+<p>The model successfully generalizes to unseen modifiers, with GloVe embeddings improving force profile reconstruction.</p>
 <div class="image-grid">
     {% for image in site.static_files %}
         {% if image.path contains '/assets/images/out_of_distribution_modifier_results/' %}
@@ -62,7 +71,10 @@ To evaluate the effectiveness of our cross-modality embedding framework, we cond
     {% endfor %}
 </div>
 
-<h2>Out-of-Distribution Directions</h2>
+<br>
+
+<h3>Out-of-Distribution Directions</h3>
+<p>Our approach effectively handles unseen directional inputs, capturing force-language relationships even for novel movement directions.</p>
 <div class="image-grid">
     {% for image in site.static_files %}
         {% if image.path contains '/assets/images/out_of_distribution_direction_results/' %}
@@ -97,6 +109,6 @@ To evaluate the effectiveness of our cross-modality embedding framework, we cond
     }
 </style>
 
-## Analysis
+<br>
 
-Our results showed that the dual autoencoder (DAE) models significantly outperformed baseline approaches in both force-to-language and language-to-force translation. The DAE models achieved 20-30% better performance than simpler SVM and MLP-based baselines, demonstrating that a shared latent space effectively captures the bidirectional relationship between physical force and linguistic descriptions. Additionally, the models successfully generalized to unseen modifiers and directions, particularly when using GloVe embeddings, which improved force profile reconstruction. However, we observed a trade-off between force reconstruction accuracy and linguistic precision: the GloVe-based model ($\text{DAE}_G$) was better at estimating realistic force trajectories, while the binary phrase vector model ($\text{DAE}_B$) provided more precise textual descriptions. These findings confirm that integrating force and language into a unified representation enhances natural human-robot communication, with different representation choices offering advantages depending on whether force accuracy or linguistic fidelity is prioritized.
+### Translation Examples

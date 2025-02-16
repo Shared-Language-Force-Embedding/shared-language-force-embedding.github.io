@@ -113,5 +113,3 @@ Number of training epochs: 1024
 Adam learning rate: 0.001
 
 Force profiles were augmented with per sample random noise residuals with mean 0 and variance 1
-
-The SVM model used an rbf kernel with regularization parameter 32.0
