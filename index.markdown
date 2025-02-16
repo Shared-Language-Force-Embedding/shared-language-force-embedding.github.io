@@ -25,8 +25,6 @@ A method for cross-modality embedding of force profile and words is presented fo
 
 ## Presentation
 
-Insert video here
-
 <h2 class="section-title"><a href="/framework/">Framework 🔗</a></h2>
 
 Our framework consisted of a dual autoencoder model that was trained to encode inputs from both modalities into a shared latent space and decode them back to construct instances of either modality.
