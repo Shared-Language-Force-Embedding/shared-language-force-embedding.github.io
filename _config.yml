@@ -51,7 +51,7 @@ header_pages:
   - pages/framework.md
   - pages/therapy_sessions.md
   - pages/data_collection.html
-  - pages/results.md
+  - pages/results.html
   - pages/paper.md
   - pages/team.md
   - pages/contact.md
