@@ -68,59 +68,6 @@ permalink: /results/
 
 <h2>Additional Results</h2>
 
-<h3>Out-of-Distribution Modifiers</h3>
-<p>The model successfully generalizes to unseen modifiers, with GloVe embeddings improving force profile reconstruction.</p>
-<div class="image-grid">
-    {% for image in site.static_files %}
-        {% if image.path contains '/assets/images/out_of_distribution_modifier_results/' %}
-            <figure>
-                <img src="{{ site.baseurl }}{{ image.path }}" alt="Modifier Result">
-                <figcaption></figcaption> <!-- Add caption if needed -->
-            </figure>
-        {% endif %}
-    {% endfor %}
-</div>
-
-<br>
-
-<h3>Out-of-Distribution Directions</h3>
-<p>Our approach effectively handles unseen directional inputs, capturing force-language relationships even for novel movement directions.</p>
-<div class="image-grid">
-    {% for image in site.static_files %}
-        {% if image.path contains '/assets/images/out_of_distribution_direction_results/' %}
-            <figure>
-                <img src="{{ site.baseurl }}{{ image.path }}" alt="Direction Result">
-                <figcaption></figcaption>
-            </figure>
-        {% endif %}
-    {% endfor %}
-</div>
-
-<style>
-    .image-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* Forces 3 columns */
-        gap: 20px; /* Adjust spacing between images */
-        justify-items: center;
-        align-items: start;
-        width: 100%;
-    }
-
-    .image-grid figure {
-        margin: 0;
-        text-align: center;
-        width: 100%; /* Ensures figures fit inside grid */
-    }
-
-    .image-grid img {
-        max-width: 100%; /* Ensures images resize correctly */
-        height: auto;
-        border-radius: 5px;
-    }
-</style>
-
-<br>
-
 <h3>Translation Examples</h3>
 
 <p>Example predictions from both $\text{DAE}_B$ and $\text{DAE}_G$ variants for corresponding force profile&mdash;phrase pairs. We generated 10 different 90-10 training-test splits, ensuring that the union of all test sets covers the full dataset. Each data point was randomly assigned to one of 10 bins, with each bin serving as a distinct test set in one of the splits. The model was trained on the remaining 9 bins and evaluated on the held-out test bin. The examples below show model predictions for cases where the corresponding force-phrase pair was not explicitly seen during training.</p>
@@ -273,3 +220,56 @@ $(document).ready(function () {
     });
 });
 </script>
+
+<br>
+
+<h3>Out-of-Distribution Modifiers</h3>
+<p>The model successfully generalizes to unseen modifiers, with GloVe embeddings improving force profile reconstruction.</p>
+<div class="image-grid">
+    {% for image in site.static_files %}
+        {% if image.path contains '/assets/images/out_of_distribution_modifier_results/' %}
+            <figure>
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="Modifier Result">
+                <figcaption></figcaption> <!-- Add caption if needed -->
+            </figure>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<br>
+
+<h3>Out-of-Distribution Directions</h3>
+<p>Our approach effectively handles unseen directional inputs, capturing force-language relationships even for novel movement directions.</p>
+<div class="image-grid">
+    {% for image in site.static_files %}
+        {% if image.path contains '/assets/images/out_of_distribution_direction_results/' %}
+            <figure>
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="Direction Result">
+                <figcaption></figcaption>
+            </figure>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<style>
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Forces 3 columns */
+        gap: 20px; /* Adjust spacing between images */
+        justify-items: center;
+        align-items: start;
+        width: 100%;
+    }
+
+    .image-grid figure {
+        margin: 0;
+        text-align: center;
+        width: 100%; /* Ensures figures fit inside grid */
+    }
+
+    .image-grid img {
+        max-width: 100%; /* Ensures images resize correctly */
+        height: auto;
+        border-radius: 5px;
+    }
+</style>
