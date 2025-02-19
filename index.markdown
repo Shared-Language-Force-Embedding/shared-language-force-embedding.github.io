@@ -23,7 +23,7 @@ A method for cross-modality embedding of force profile and words is presented fo
 
 ## Demonstration
 
-<video class="video-js" style="display:block;width:100%;" controls preload="auto">
+<video class="video-js" style="display:block;width:100%;" controls autoplay preload="auto">
     <source src="/assets/videos/demo.webm" type="video/webm">
 </video>
 
