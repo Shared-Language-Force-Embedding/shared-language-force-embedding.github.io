@@ -33,8 +33,6 @@ We present a framework that maps language and force into a shared latent space, 
     <source src="/assets/videos/presentation.mp4" type="video/mp4">
 </video>
 
-[Slides](https://docs.google.com/presentation/d/1sQLPpRt3YNDDI3nDV0YD3PT097j20cjJ7gldSTidsmA/edit?usp=sharing)
-
 <h2 class="section-title"><a href="/framework/">Framework 🔗</a></h2>
 
 Our framework consisted of a dual autoencoder model that was trained to encode inputs from both modalities into a shared latent space and decode them back to construct instances of either modality.
