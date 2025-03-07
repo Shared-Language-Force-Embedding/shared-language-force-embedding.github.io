@@ -29,6 +29,10 @@ We present a framework that maps language and force into a shared latent space, 
 
 ## Presentation
 
+<video class="video-js" style="display:block;width:100%;" controls preload="auto">
+    <source src="/assets/videos/presentation.mp4" type="video/mp4">
+</video>
+
 [Slides](https://docs.google.com/presentation/d/1sQLPpRt3YNDDI3nDV0YD3PT097j20cjJ7gldSTidsmA/edit?usp=sharing)
 
 <h2 class="section-title"><a href="/framework/">Framework 🔗</a></h2>
