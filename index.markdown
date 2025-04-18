@@ -21,22 +21,6 @@ permalink: /
 
 We present a framework that maps language and force into a shared latent space, enabling seamless translation between verbal commands and physical interactions. Using a dual autoencoder model trained on human data, our approach facilitates natural human-robot collaboration and lays the groundwork for multimodal communication in robotics.
 
-## Demonstration
-
-<video class="video-js" style="display:block;width:100%;" autoplay controls preload="auto">
-    <source src="/assets/videos/demo.webm" type="video/webm">
-</video>
-
-<br>
-
-## Presentation
-
-<!-- <video class="video-js" style="display:block;width:100%;" controls preload="auto">
-    <source src="/assets/videos/presentation.mp4" type="video/mp4">
-</video> -->
-
-[Slides](https://docs.google.com/presentation/d/1sQLPpRt3YNDDI3nDV0YD3PT097j20cjJ7gldSTidsmA/edit?usp=sharing)
-
 <h2 class="section-title"><a href="/framework/">Framework 🔗</a></h2>
 
 Our framework consisted of a dual autoencoder model that was trained to encode inputs from both modalities into a shared latent space and decode them back to construct instances of either modality.

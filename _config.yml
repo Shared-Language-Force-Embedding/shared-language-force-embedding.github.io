@@ -48,6 +48,7 @@ plugins:
 #   - vendor/ruby/
 
 header_pages:
+  - pages/demo.md
   - pages/framework.md
   - pages/data_collection.html
   - pages/results.html
@@ -55,6 +56,7 @@ header_pages:
   - pages/paper.md
   - pages/team.md
   - pages/contact.html
+  - pages/exhibit.md
 
 authors:
   - name: "Karl Velazquez"
