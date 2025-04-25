@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: Shared Force-Language Embeddings for Natural Human-Robot Communication
+title: Cross-modality Force and Language Embeddings for Natural Human-Robot Communication
 permalink: /
 ---
 
