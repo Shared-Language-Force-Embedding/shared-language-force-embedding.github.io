@@ -49,14 +49,14 @@ plugins:
 
 header_pages:
   - pages/demo.md
+  - pages/therapy_sessions.md
   - pages/framework.md
   - pages/data_collection.html
   - pages/results.html
-  - pages/therapy_sessions.md
   - pages/paper.md
+  - pages/exhibit.md
   - pages/team.md
   - pages/contact.html
-  - pages/exhibit.md
 
 authors:
   - name: "Karl Velazquez"
