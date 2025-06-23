@@ -1,0 +1,207 @@
+<h2>Additional Results</h2>
+
+<h3>Translation Examples</h3>
+
+<p>Example predictions from both $\text{DAE}_B$ and $\text{DAE}_G$ variants for corresponding force profile&mdash;phrase pairs. We generated 10 different 90-10 training-test splits, ensuring that the union of all test sets covers the full dataset. Each data point was randomly assigned to one of 10 bins, with each bin serving as a distinct test set in one of the splits. The model was trained on the remaining 9 bins and evaluated on the held-out test bin. The examples below show model predictions for cases where the corresponding force-phrase pair was not explicitly seen during training.</p>
+
+<!-- Load jQuery and DataTables -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+
+<strong>Phrase-To-Force Trials</strong>
+
+<p>Corresponding force profile and phrase pairs collected from the Phrase-To-Force procedure.</p>
+
+<!-- Dropdown for Modifiers -->
+<label for="searchModifier_phrase2force">Filter by Modifier:</label>
+<select id="searchModifier_phrase2force">
+    <option value="">All</option>
+    <option value="(None)">None</option>
+    {% for modifier in site.data.unique_phrase_parts.unique_modifiers %}
+        {% if modifier != "" %}
+            <option value="{{ modifier }}">{{ modifier }}</option>
+        {% endif %}
+    {% endfor %}
+</select>
+
+<!-- Dropdown for Directions -->
+<label for="searchDirection_phrase2force">Filter by Direction:</label>
+<select id="searchDirection_phrase2force">
+    <option value="">All</option>
+    {% for direction in site.data.unique_phrase_parts.unique_directions %}
+        {% if direction != "" %}
+            <option value="{{ direction }}">{{ direction }}</option>
+        {% endif %}
+    {% endfor %}
+</select>
+
+<!-- Data Table -->
+<table id="dataTable_phrase2force" class="display">
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Trial #</th>
+            <th>Phrase Text</th>
+            <th>Modifier</th>
+            <th>Direction</th>
+            <th>Trial Card</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in site.data.phrase2force_corpus %}
+        <tr>
+            <td>{{ row.user_id }}</td>
+            <td>{{ row.trial_number }}</td>
+            <td>{{ row.phrase_text }}</td>
+            <td>{{ row.adverb | default: "(None)" }}</td>
+            <td>{{ row.direction }}</td>
+            <td>
+                <a href="#" class="load-trial-card" 
+                   data-type="Phrase2Force" 
+                   data-user="{{ row.user_id }}" 
+                   data-trial="{{ row.trial_number }}" 
+                   data-phrase="{{ row.phrase_text }}" 
+                   data-modifier="{{ row.adverb | default: '(None)' }}" 
+                   data-direction="{{ row.direction }}">
+                    View
+                </a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<!-- Placeholder for dynamically loaded trial cards -->
+<div id="trialCardContainer"></div>
+
+<script>
+$(document).ready(function () {
+    var phrase2forceTable = $('#dataTable_phrase2force').DataTable();
+    var force2phraseTable = $('#dataTable_force2phrase').DataTable();
+
+    // Modifier Dropdown Filtering
+    $('#searchModifier_phrase2force').on('change', function () {
+        var value = this.value;
+        if (value === "(None)") {
+            phrase2forceTable.column(3).search("^\\(None\\)|^$", true, false).draw(); // Match "(None)" explicitly or empty values
+        } else {
+            phrase2forceTable.column(3).search("^" + $.fn.dataTable.util.escapeRegex(value) + "$", true, false).draw();
+        }
+    });
+    $('#searchModifier_force2phrase').on('change', function () {
+        var value = this.value;
+        if (value === "(None)") {
+            force2phraseTable.column(3).search("^\\(None\\)|^$", true, false).draw(); // Match "(None)" explicitly or empty values
+        } else {
+            force2phraseTable.column(3).search("^" + $.fn.dataTable.util.escapeRegex(value) + "$", true, false).draw();
+        }
+    });
+
+    // Direction Dropdown Filtering
+    $('#searchDirection_phrase2force').on('change', function () {
+        phrase2forceTable.column(4).search(this.value ? '^' + this.value + '$' : '', true, false).draw();
+    });
+    $('#searchDirection_force2phrase').on('change', function () {
+        force2phraseTable.column(4).search(this.value ? '^' + this.value + '$' : '', true, false).draw();
+    });
+
+    // Event delegation for loading trial cards dynamically
+    $(document).on("click", ".load-trial-card", function (e) {
+        e.preventDefault();
+
+        var trialType = $(this).data("type");
+        var userId = $(this).data("user");
+        var trialNumber = $(this).data("trial");
+        var phraseText = $(this).data("phrase");
+        var modifier = $(this).data("modifier");
+        var direction = $(this).data("direction");
+
+        // Remove any existing trial card
+        $("#trialCardContainer").empty();
+
+        // Determine file paths
+        var videoPath, imagePath;
+        if (trialType === "Phrase2Force") {
+            imagePath = "/assets/images/translation_examples/" + userId + "_" + trialNumber + ".png";
+        }
+        // else {
+        //     imagePath = "/assets/images/force_to_phrase_force_profiles/" + userId + "_" + trialNumber + ".png";
+        // }
+
+        // Generate trial card content dynamically
+        var trialCardHtml = `
+            <div class="data-section">
+                <h3>User ${userId}, Trial ${trialNumber} (${trialType.replace("2", "-to-")})</h3>
+                <p><strong>Phrase Text:</strong> ${phraseText}</p>
+                <p><strong>Modifier:</strong> ${modifier}</p>
+                <p><strong>Direction:</strong> ${direction}</p>
+                <figure>
+                    <p><strong>Translation Example:</strong></p>
+                    <img src="${imagePath}" alt="Translation Example for User ${userId}, Trial ${trialNumber}" width="100%">
+                </figure>
+            </div>
+        `;
+
+
+        // Append new trial card
+        $("#trialCardContainer").append(trialCardHtml);
+        $('html, body').animate({
+            scrollTop: $("#trialCardContainer").offset().top
+        }, 500);
+    });
+});
+</script>
+
+<br>
+
+<h3>Out-of-Distribution Modifiers</h3>
+<p>The model successfully generalizes to unseen modifiers, with GloVe embeddings improving force profile reconstruction.</p>
+<div class="image-grid">
+    {% for image in site.static_files %}
+        {% if image.path contains '/assets/images/out_of_distribution_modifier_results/' %}
+            <figure>
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="Modifier Result">
+                <figcaption></figcaption> <!-- Add caption if needed -->
+            </figure>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<br>
+
+<h3>Out-of-Distribution Directions</h3>
+<p>Our approach effectively handles unseen directional inputs, capturing force-language relationships even for novel movement directions.</p>
+<div class="image-grid">
+    {% for image in site.static_files %}
+        {% if image.path contains '/assets/images/out_of_distribution_direction_results/' %}
+            <figure>
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="Direction Result">
+                <figcaption></figcaption>
+            </figure>
+        {% endif %}
+    {% endfor %}
+</div>
+
+<style>
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Forces 3 columns */
+        gap: 20px; /* Adjust spacing between images */
+        justify-items: center;
+        align-items: start;
+        width: 100%;
+    }
+
+    .image-grid figure {
+        margin: 0;
+        text-align: center;
+        width: 100%; /* Ensures figures fit inside grid */
+    }
+
+    .image-grid img {
+        max-width: 100%; /* Ensures images resize correctly */
+        height: auto;
+        border-radius: 5px;
+    }
+</style>

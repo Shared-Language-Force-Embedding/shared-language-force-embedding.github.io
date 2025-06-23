@@ -45,7 +45,7 @@ We evaluated 2 variations of our framework against 3 other baseline models. Our 
 
 <br>
 
-Our dual autoencoder models consistently outperformed the baselines by 20–30% across core metrics. They also generalized well to unseen modifiers and directions, especially with GloVe embeddings, which enhanced force profile accuracy. Meanwhile, binary-based embeddings offered more precise textual output. Overall, unifying force and language in a single representation enables more natural and robust human-robot interactions.
+Our dual autoencoder models consistently outperformed the baselines across all core metrics. They also generalized well to unseen modifiers and directions, especially whiling using SBERT embeddings, which enhanced force profile accuracy. Meanwhile, binary-based embeddings offered more precise textual output. Overall, unifying force and language in a single representation enables more natural and robust human-robot interactions.
 
 ## Code
 
