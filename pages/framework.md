@@ -17,7 +17,7 @@ Our framework consisted of a dual autoencoder model that was trained to encode i
                 <th>Input Type</th>
                 <th>Flattened Force Profile Features</th>
                 <th>Binary Phrase Vector</th>
-                <th>GloVe Embedding Phrase Vector</th>
+                <th>SBERT Embedding Phrase Vector</th>
             </tr>
         </thead>
         <tbody>
@@ -29,9 +29,9 @@ Our framework consisted of a dual autoencoder model that was trained to encode i
             </tr>
             <tr>
                 <td>Encoder Layer 1</td>
-                <td>769×512</td>
+                <td>768×512</td>
                 <td>62×512</td>
-                <td>150×512</td>
+                <td>769×512</td>
             </tr>
             <tr>
                 <td>Encoder Activation 1</td>
@@ -95,9 +95,9 @@ Our framework consisted of a dual autoencoder model that was trained to encode i
             </tr>
             <tr>
                 <td><strong>Output Vector</strong></td>
-                <td><strong>769×1</strong></td>
+                <td><strong>768×1</strong></td>
                 <td><strong>62×1</strong></td>
-                <td><strong>150×1</strong></td>
+                <td><strong>768×1</strong></td>
             </tr>
         </tbody>
     </table>
